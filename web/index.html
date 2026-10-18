@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test Number Five — Experience Response Spectroscopy</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="shell">
+<header class="masthead"><div class="eyebrow">INFORMATIONAL SPECTRA / EXPERIMENT 005</div><div class="headerline"><div><h1>What did the cable remember?</h1><p>Same electrical probe. Different history. One soma.</p></div><a href="https://github.com/anttiluode/TestNumberFive" target="_blank" rel="noopener">SOURCE ↗</a></div></header>
+<main>
+  <section class="panel device"><div class="section-head"><span class="eyebrow">01 / EXPERIMENTAL SUBSTRATE</span><span id="state" class="pill">UNWRITTEN</span></div>
+    <h2>One cable, four possible experiences</h2>
+    <p class="hint">A brief electrical impulse enters one distal branch. Local squared voltage deposits a slow membrane shunt. Fast voltage is then reset to zero before readout.</p>
+    <div class="tree-area"><svg id="tree" viewBox="0 0 520 390" aria-label="Soma at center and four six-compartment branches with experience-modified conductances"></svg></div>
+    <div class="controls-label">WRITE AN EXPERIENCE</div><div id="experience-buttons" class="buttons"></div>
+    <div class="controls-row"><button id="no-write" class="secondary">Pulse without plasticity</button><button id="reset" class="secondary">Reset operator</button></div>
+    <div class="legend"><span><b class="legend-dot old"></b>Baseline membrane</span><span><b class="legend-dot new"></b>Modified conductance</span></div>
+  </section>
+  <section class="panel measurements"><div class="section-head"><span class="eyebrow">02 / OBSERVE THROUGH THE SOMA</span><span class="mono">H(ω) = e₀ᵀ (G+iωC)⁻¹ b</span></div>
+    <h2>The next signal meets a different cable</h2>
+    <p class="hint">Every curve comes from solving the complex cable equation, not from an animation preset. Pick where the identical test signal enters.</p>
+    <div class="controls-label">PROBE ENTRY LOCATION</div><div id="probe-buttons" class="buttons"></div>
+    <div class="view-switch"><button class="active" data-view="change">Experience residue Δ log|H|</button><button data-view="absolute">Before / after |H|</button></div>
+    <div class="chart-wrap"><svg id="plot" viewBox="0 0 640 300" role="img" aria-label="Frequency dependent soma response"></svg></div>
+    <div class="reading"><div><span class="eyebrow">RESPONSE CHANGE (RMS)</span><strong id="rms">0.000</strong></div><div><span class="eyebrow">TOTAL SLOW WRITE</span><strong id="budget">0.000</strong></div></div>
+    <p id="status" class="caption">Select an experience to change the operator. The probe stays the same before and after.</p>
+  </section>
+  <section class="panel bottom"><div class="section-head"><span class="eyebrow">03 / WHAT THE BENCHMARK TESTS</span></div>
+   <div class="three-col"><div><h3>Existence</h3><p>The experience-induced shunt persists after the impulse and all transient voltage have cleared.</p></div><div><h3>Readability</h3><p>One soma can discriminate different histories, especially when the probe location is allowed to vary.</p></div><div><h3>Operator modes</h3><p>Does the native cable eigenbasis predict a future response better than an equal-sized arbitrary coordinate basis?</p></div></div>
+   <p class="bottom-note">This is a synthetic passive electrical cable with an engineered plasticity rule, not a biological neuron or evidence of a universal information spectrum. Read the <a href="../PREREG.md">preregistered gates</a> and <a href="../results/gates.json">recorded results</a>. A failed gate remains a failure.</p>
+  </section>
+</main><footer>TEST NUMBER FIVE · Sihti → cable → experience-dependent operator → measured consequence</footer>
+</div><script type="module" src="app.mjs"></script></body></html>

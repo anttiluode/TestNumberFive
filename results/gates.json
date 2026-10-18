@@ -1,0 +1,44 @@
+{
+  "setup": {
+    "seed_train": "0-39",
+    "seed_test": "40-79",
+    "n_test": 160,
+    "modes": 8,
+    "write_budget": 0.65,
+    "probe_frequencies_rad_s": [
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8,
+      1.6,
+      3.2,
+      6.4
+    ]
+  },
+  "measurements": {
+    "trace_fraction_above_threshold": 1.0,
+    "median_trace_rms": 0.26416393455947473,
+    "no_write_max_transfer_error": 0.0,
+    "paired_accuracy": 1.0,
+    "unpaired_accuracy": 1.0,
+    "single_port_accuracy": 0.5125,
+    "sham_accuracy": 0.175,
+    "native_median_relative_error": 0.7479233578389564,
+    "index_cosine_median_relative_error": 2.176102870068723,
+    "native_to_cosine_error_ratio": 0.34369853012295154
+  },
+  "gates": {
+    "G1": true,
+    "G2": false,
+    "G3": true,
+    "G4": true,
+    "G5": true
+  },
+  "notes": [
+    "Toy demonstration only: write rule was explicitly constructed to be experience-sensitive.",
+    "Frequencies are temporal angular frequencies (rad/s), not semantic frequency bands.",
+    "No genuine plasticity is claimed for a frozen transformer, nor biological validation for this cable.",
+    "Relative spectral approximation error may be unstable for tiny distal transfer amplitudes; raw error distributions are saved."
+  ]
+}
