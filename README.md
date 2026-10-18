@@ -76,6 +76,10 @@ The [thresholds were committed before code/gate execution](PREREG.md). All four 
 
 For an **axial edge** rather than a membrane shunt, it would be \(\delta\lambda_k\simeq\delta w_{ab}(\phi_k(a)-\phi_k(b))^2\), the earlier graph-sensitivity equation. The first-order calculation uses 10% of the full shunt write, and is **exploratory, not a preregistered sixth gate**. See [mode shifts](results/mode_shifts.json).
 
+## Make the browser microscope live
+
+The browser is committed at `web/index.html`, but GitHub Pages is not automatically enabled for a brand-new repository. A deploy workflow is included. Once, as the repository owner, visit **Settings → Pages → Build and deployment → Source: GitHub Actions**. Then rerun the failed **Publish cable microscope** workflow, or push a new commit. Until Pages is enabled, the live-page link above may return 404. You can always run it locally as shown below.
+
 ## Run it
 
 ```sh
